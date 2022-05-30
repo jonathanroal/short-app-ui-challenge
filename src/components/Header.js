@@ -1,18 +1,25 @@
-import Grid from '@mui/material/Grid';
+import { Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import smolIcon from "../assets/fullSmol.png";
+import "../styles/Header.css";
 
-export default function UrlInput() {
+// Renders header text and logo
+export default function Header() {
   return (
-    <Box
-      sx={{
-        marginTop: '30px',
-        width: '80%',
-        height: 300,
-        backgroundColor: 'white',
-        borderRadius: '10px',
-        boxShadow: 3,
-      }}
+    <Grid
+      className="header"
+      item
+      container
+      xs={12}
+      style={{ marginTop: "50px" }}
     >
-
-    </Box>
-  )
+      <Typography
+        variant="h1"
+        style={{ color: "#606669", fontSize: "5vw", alignSelf: "center" }}
+      >
+        SMOL URL Shortener
+      </Typography>
+      <img className="smol" src={smolIcon} alt="smol icon" />
+    </Grid>
+  );
 }

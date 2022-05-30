@@ -1,0 +1,13 @@
+.smol {
+    height:100px;
+    margin-top:10px;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    grid-auto-flow: column;
+    margin-bottom: 20px;
+}
