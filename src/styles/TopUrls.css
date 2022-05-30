@@ -1,0 +1,9 @@
+.container {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: auto;
+    justify-content: center;
+}
